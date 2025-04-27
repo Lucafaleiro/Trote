@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: #28a745;
+    color: white;
+    padding: 15px 0;
+    font-size: 24px;
+  }
+  
+  /* Navegação */
+  nav {
+    background-color: #007bff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #links-menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #005663;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  nav a:hover {
+    background: #003d82;
+  }
+  
+  /* Imagem do nav */
+  nav img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Conteúdo principal */
+  main.container {
+    flex: 1;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Listas */
+  ol {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Rodapé */
+  footer.footerfix {
+    border-top: 2px solid black;
+    background-color: #3ead58;
+    color: white;
+    font-size: 14px;
+    padding: 15px 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  footer .icons {
+    margin-bottom: 10px;
+  }
+  
+  footer img {
+    width: 30px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    #links-menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    nav img {
+      margin-top: 10px;
+    }
+  
+    main.container {
+      width: 95%;
+      padding: 15px;
+    }
+  }
+  table tr td {
+    padding: 20px; /*aplica apenas no td detro do tr dentro das tabelas*/
+  }
+  
+  table {
+    margin: 0 auto; /*espaçamento externo de 0 acima e abaixo, automatico nas laterais*/
+  }
+  
+  .laranja {
+    background-color: orange;
+  }
+  
+  .azul {
+    background-color: blue;
+    color: white;
+  }
+  
+  .preta {
+    background-color: black;
+    color: white;
+  }
+  
+  .roxa {
+    background-color: purple;
+  }
+  
+  .verde {
+    background-color: green;
+  }
+  
+  .vermelha {
+    background-color: red;
+  }
+  
+  .campos {
+    margin: 20px;
+  }
